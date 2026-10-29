@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="透過聯絡表單聯繫我的個人品牌。">
+  <title>聯絡我們｜我的個人品牌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">M<span>.</span></span><span>我的個人品牌</span></a>
+    <nav aria-label="主要導覽"><a href="index.html">首頁</a><a href="about.html">公司介紹</a><a class="active" href="contact.html">聯絡我們</a></nav>
+  </header>
+  <main>
+    <section class="page-hero container contact-hero">
+      <p class="eyebrow"><span class="status-dot"></span> GET IN TOUCH</p>
+      <h1>讓我們開始<br><span class="gradient-text">一場對話。</span></h1>
+      <p class="hero-copy">有任何想法、問題或合作提案？歡迎填寫下方表單，我們期待收到你的訊息。</p>
+    </section>
+    <section class="container contact-layout">
+      <aside class="contact-aside">
+        <p class="eyebrow">CONTACT INFO</p><h2>保持聯繫。</h2>
+        <p>請填妥表單中的資料，按下送出後，系統會將內容寄到網站管理者的信箱。</p>
+        <div class="contact-info"><span class="info-icon">@</span><div><small>EMAIL</small><p>zxcv50408@gmail.com</p></div></div>
+        <div class="contact-info"><span class="info-icon">⌁</span><div><small>RESPONSE</small><p>我們收到信後會再行回覆</p></div></div>
+        <div class="contact-note">✦　所有欄位皆需填寫，請確認 Email 拼寫正確。</div>
+      </aside>
+      <div class="form-card">
+        <div class="form-card-head"><div><p class="eyebrow">SEND A MESSAGE</p><h2>聯絡表單</h2></div><span class="form-step">FORM / 01</span></div>
+        <!-- FormSubmit 會將表單寄到指定信箱。首次使用須先到收件信箱完成啟用確認。 -->
+        <form action="https://formsubmit.co/zxcv50408@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="【我的個人品牌】收到新的聯絡表單">
+          <input type="hidden" name="_template" value="table">
+          <div class="form-field"><label for="name">姓名 <span>*</span></label><input id="name" name="姓名" type="text" placeholder="請輸入你的姓名" autocomplete="name" required></div>
+          <div class="form-field"><label for="phone">電話 <span>*</span></label><input id="phone" name="電話" type="tel" placeholder="請輸入聯絡電話" autocomplete="tel" required></div>
+          <div class="form-field"><label for="email">Email <span>*</span></label><input id="email" name="Email" type="email" placeholder="name@example.com" autocomplete="email" required></div>
+          <div class="form-field"><label for="message">聯絡內容 <span>*</span></label><textarea id="message" name="聯絡內容" rows="5" placeholder="請輸入想聯絡的內容……" required></textarea></div>
+          <button class="button button-primary submit-button" type="submit">送出表單 <span aria-hidden="true">↗</span></button>
+          <p class="form-disclaimer">按下送出後，資料會透過 FormSubmit 傳送。請勿填寫密碼或其他敏感資訊。</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">M<span>.</span></span><span>我的個人品牌</span></a><span>© 2026 我的個人品牌 · Built with ideas.</span></footer>
+</body>
+</html>
